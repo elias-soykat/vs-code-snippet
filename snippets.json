@@ -1,0 +1,43 @@
+{
+  "Print to console": {
+    "scope": "javascript,typescript",
+    "prefix": "clg",
+    "body": ["console.log('${1}', ${1:});"],
+    "description": "Log output to console"
+  },
+
+  "reactFunctionalComponent": {
+    "prefix": "rfc",
+    "body": [
+      "import React from 'react'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <div>${1:first}</div>",
+      "  )",
+      "}",
+      ""
+    ],
+    "description": "Creates a React Functional Component",
+    "scope": "javascript, typescript"
+  },
+
+  "reactNativeFunctionalComponent": {
+    "prefix": "rnf",
+    "body": [
+      "import React from 'react'",
+      "import { StyleSheet, View, Text } from 'react-native'",
+      "",
+      "export default function ${1:${TM_FILENAME_BASE}}() {",
+      "  return (",
+      "    <View>",
+      "      <Text>${1:first}</Text>",
+      "    </View>",
+      "  )",
+      "}",
+      "",
+      "const styles = StyleSheet.create({$2})"
+    ],
+    "scope": "typescript,typescriptreact,javascript,javascriptreact"
+  }
+}
