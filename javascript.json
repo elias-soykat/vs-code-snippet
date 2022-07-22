@@ -13,7 +13,7 @@
       "",
       "export default function ${1:${TM_FILENAME_BASE}}() {",
       "  return (",
-      "    <div>${1:first}</div>",
+      "    <div><h1>${1:first}</h1></div>",
       "  )",
       "}",
       ""
